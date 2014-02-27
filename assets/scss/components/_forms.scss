@@ -1,0 +1,41 @@
+form {
+	margin-top:35px auto 300px;
+	
+  input {
+		font-weight:normal;
+		text-align:center;
+    background: transparent;
+		border:none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 0 rem-calc(20);
+    font-size: rem-calc(16);
+    color: black;
+    height: rem-calc(30);
+    line-height: rem-calc(30);
+    margin: 8px auto rem-calc(32);
+    @include placeholder(#D0D2D3);
+    outline: none;
+		
+		-webkit-appearance: none;
+		border-radius: 0;
+		
+    &[type="submit"] {
+			margin: 22px auto 16px;
+			border: 1px solid black;
+      background: white;
+      color: black;
+      height: rem-calc(44);
+      line-height: rem-calc(40);
+			
+			
+    }
+  }
+}
+
+#mc-embedded-subscribe:hover{
+	
+	cursor:pointer;
+	background:black;
+	color:white;
+}

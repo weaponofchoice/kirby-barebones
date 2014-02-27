@@ -1,0 +1,31 @@
+require 'grit'
+
+task :default => :test
+
+task :precompile do
+	repo = Grit::Repo.new('./')
+	status = repo.status
+	if status.changed.length > 0
+ 		puts 'You have uncommitted changes. Please commit all changes before precompiling.'
+ 	else
+		puts 'Precompiling, please wait untill finished.'
+		js_command = "bundle exec juicer merge assets/js/app.js -s compressed --force"
+		
+		sh js_command
+		sh "compass compile -s compressed --force"
+		
+		status = repo.status
+		if status.changed.length > 0
+			
+			status.changed.each do |file|
+				repo.add file[1].path
+			end
+ 			
+			repo.commit_index('Precompiled both app.css and app.min.js.')
+			
+			puts 'Assets have been recompiled and committed.'
+		else
+			puts 'Assets recompiled, but nothing changed. Not commiting.'
+		end
+	end
+end

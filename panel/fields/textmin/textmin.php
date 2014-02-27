@@ -1,0 +1,1 @@
+<input type="text" class="input input-min" name="<?php echo html($name) ?>" value="<?php echo html($value) ?>" textread/>

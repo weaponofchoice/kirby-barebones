@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+		Erik Gelderblom -- @erikfontanel
+    Bruce Moerdjiman -- @broezer
+		
+
+# THANKS
+
+    Bastian Allgeier -- @bastianallgeier
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SASS, JavaScript, CoffeeScript, PHP
+    Normalize.css, jQuery, Modernizr, Foundation

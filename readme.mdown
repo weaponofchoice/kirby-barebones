@@ -1,0 +1,27 @@
+
+#Kirby Barbones - Weaponofchoice
+
+
+This is meant to be the continuation of the 'Barebones Weaponofchoice Starter Project : https://github.com/weaponofchoice/barebones' laid out by Erik.
+However this setup is a bit more complex as it had a Kirby CMS as it base.
+
+Before using this besure to be comfortable working with the CMS ans be familiar with the 'Barebones Weaponofchoice Starter Project : https://github.com/weaponofchoice/barebones'
+
+This Kirby setup is based on the Kirby CMS, which can be found here: http://getkirby.com
+In this setup we adjusted the assets folder, so the Barebones setup is placed.
+Also some handy .htacces and .gitignore files are placed to help you on the way.
+
+##Kirby Panel
+
+To let you use Kirby at his best, I also pre-installed the panel. Simple goto 'http://wwww.yourdomain.com/panel' to login.
+Change user settings in thise file 'site/panel/accounts'. Remindyou the username has to be the same as the file name.
+Further details got  to: http://getkirby.com/panel
+
+## Bundle - Precompile & Compress JavaScript & SASS
+
+Based on the repo of Erik (https://github.com/weaponofchoice/barebones) with some nifty command line tools for compiling and compressing SASS & JavaScript, all SASS & JS in the assets folder will be handled if used correctly. 
+To run this simple execute 'bundle exec rake precompile'. This will trigger  'js/app.js' into 'js/app.min.js' and 'sass/apps.scss' into 'css/app.css'.
+
+View 'rakefile' for the source of this script.
+
+Remind you, first commit, then precompile.
